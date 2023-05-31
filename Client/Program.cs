@@ -15,5 +15,5 @@ while (true)
     {
         System.Console.WriteLine(data);
     }
-    System.Console.WriteLine("OK ----");
+    System.Console.WriteLine($"{DateTime.Now} ----");
 }
