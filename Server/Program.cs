@@ -9,4 +9,8 @@ UdpClient senderUdp = new(2000);
 
 senderUdp.JoinMulticastGroup(multicastAddress);
 
-senderUdp.Send(new byte[] { 1, 2, 3 }, destination);
+while (true)
+{
+    senderUdp.Send(new byte[] { 1, 2, 3 }, destination);
+    Thread.Sleep(5000);
+}
